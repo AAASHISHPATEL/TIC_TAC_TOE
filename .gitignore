@@ -2,7 +2,7 @@
 using namespace std;
 string user1=""; 
 string user2="";
-string flag;
+string flag="";
  string mat[3][3]={{"1","2","3"},{"4","5","6"},{"7","8","9"}};
  int row,col;
  string token;
@@ -107,12 +107,12 @@ bool condition(){
    }
 
    if(mat[0][0]=="O" && mat[1][1]=="O" && mat[2][2]=="O"){
-      flag='O';
+      flag="O";
    return true;
    }
 
    if(mat[0][2]=="X" && mat[1][1]=="X" && mat[2][0]=="X"){
-      flag='O';
+      flag="O";
    return true;
    }
 
@@ -124,7 +124,7 @@ bool condition(){
    for(int i=0;i<3;i++){
       for(int j=0;j<3;j++){
          if(mat[i][j]!="X" && mat[i][j]!="O"){
-            flag='d';
+            flag="d";
             return false;
          }
       }
