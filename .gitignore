@@ -112,7 +112,7 @@ bool condition(){
    }
 
    if(mat[0][2]=="X" && mat[1][1]=="X" && mat[2][0]=="X"){
-      flag="O";
+      flag="X";
    return true;
    }
 
